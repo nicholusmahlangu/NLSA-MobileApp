@@ -1,0 +1,7 @@
+{
+  "name": "NLSA-MOBILEAPP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
