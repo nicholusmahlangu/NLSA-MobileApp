@@ -8,7 +8,7 @@ ion-header{
         border-radius: 10px 10px 10px 50px;
         margin-top: -3rem;
         margin-left: -1rem;
-        box-shadow: 0 1px 10px rgba(255, 98, 169, 0.5);
+        box-shadow: 0 1px 10px rgba(6, 8, 11, 0.5);
     }
     ion-item {
         --background: transparent;
@@ -18,7 +18,7 @@ ion-header{
         ion-avatar {
             height: 5rem;
             width: 5rem;
-            border: 5px solid #ff8a7e;
+            border: 5px solid white;
             margin-right: 0.6rem;
         }
         ion-label {
