@@ -17,7 +17,18 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" scrollbar="true">
+        <swiper-container 
+            #swiper
+            (afterinit)="swiperReady()"
+            (slidechange)="swiperSlideChanged($event)"
+            [loop]="true"
+            [pagination]="true"
+            >
+          <swiper-slide *ngFor="let image of images"[autofocus]="SwiperRef">
+              <img [src]="image" />
+          </swiper-slide>
+        </swiper-container>
   <ion-row>
     @for(item of items; track i; let i = $index){
       <ion-col sizeLg="3" sizeMd="4"  sizeSm="6" sizeXl="3" sizeXs="6">
@@ -37,4 +48,66 @@
       </ion-col>
     }
   </ion-row>
+
+  <div>
+    <p class="aboutNLSA">
+      <strong>
+        About The National Library of South Africa
+      </strong>
+    </p>
+  </div>
+
+  <div>
+    <p class="descriptionNLSA">
+      <strong>
+        The National Library of South Africa (NLSA) is the custodian of South Africa’s collective national heritage materials and the national depository of published output materials in the country.
+      </strong>
+    </p>
+
+  </div>
+  
+  <div>
+    <p class="descriptionNLSASec" style="overflow-y: auto;">
+      <strong>
+        The NLSA is mandated by the <a  class="nlsaAct92" href="https://www.nlsa.ac.za/wp-content/uploads/2023/09/National-Library-of-South-Africa-Act.pdf">National Library of South Africa Act 92 of 1998</a> to collect and preserve published documents and make them accessible to all; ensuring that knowledge is not lost to posterity.
+      </strong>
+    </p>
+
+  </div>
+
+  <ion-button size="small" href="https://www.nlsa.ac.za/about-us/" class="btn-readMore">Read More</ion-button>
+
+  <ion-content>
+    <div>
+      <p class="ourLetestNews">
+        <strong>
+          Our Latest News
+        </strong>
+      </p>
+    </div>
+    <ion-row>
+      @for(item of items; track i; let i = $index){
+        <ion-col sizeLg="3" sizeMd="4"  sizeSm="6" sizeXl="3" sizeXs="6">
+          <ion-card [routerLink]="['/', 'home', 'gifts', item?.id]">
+            <ion-thumbnail>
+              <ion-img [src]="item?.cover"></ion-img>
+            </ion-thumbnail>
+            <ion-label>
+              <ion-text color="dark"><strong>{{item?.name}}</strong></ion-text>
+              <p>
+                <ion-text color="dark">
+                  <strong>{{item?.description}}</strong><br>
+                </ion-text>
+              
+                <ion-text class="rating" color="dark">
+                    <strong>{{item?.title}}</strong>
+                </ion-text>
+              </p>
+            </ion-label>
+          </ion-card>  
+        </ion-col>
+      }
+    </ion-row>
+  </ion-content>
+
 </ion-content>

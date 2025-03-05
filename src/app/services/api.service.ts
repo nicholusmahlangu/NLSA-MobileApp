@@ -12,33 +12,31 @@ export class ApiService {
       price: 999,
       status: true,
       rating: 4.9,
+      title: 'Continue Reading',
       cover: 'assets/gifts/gift-basket.jpg',
       description: 'Search our catalogue'
     },
     {
       id: '2',
+      rating: 4.9,
       name: 'Core programmes',
-      price: 500,
-      status: true,
-      rating: 4.7,
+      title: 'Continue Reading',
       cover: 'assets/gifts/chocolate-box.jpg',
       description: 'Our mandate'
     },
     {
       id: '3',
-      name: 'Careers',
-      price: 1500,
-      status: true,
       rating: 4.9,
+      name: 'Careers',
+      title: 'Continue Reading',
       cover: 'assets/gifts/gift-card.jpg',
       description: 'Join our team'
     },
     {
       id: '4',
+      rating: 4.9,
       name: 'Engage',
-      price: 10000,
-      status: true,
-      rating: 4.8,
+      title: 'Continue Reading',
       cover: 'assets/gifts/handbag.jpg',
       description: 'Connect with us'
     },];

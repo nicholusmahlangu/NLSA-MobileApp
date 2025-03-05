@@ -1,3 +1,15 @@
+swiper-container {
+  width: 100%;
+  height: 25%;
+}
+
+swiper-slide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 ion-card {
   --background: var(--ion-color-light);
   height: 14rem;
@@ -36,4 +48,36 @@ ion-card {
       }
     }
   }
+}
+
+.aboutNLSA {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.descriptionNLSA {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.descriptionNLSASec {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.nlsaAct92 {
+  color: blue;
+  text-decoration: none;
+}
+
+.btn-readMore {
+  margin-top: 10%;
+  margin-left: 40%;
+  padding: 0;
+  margin-bottom: 5%;
+}
+
+.ourLetestNews {
+  text-align: center;
+  padding-top: 10px;
 }

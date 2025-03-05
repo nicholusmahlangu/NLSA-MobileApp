@@ -15,6 +15,15 @@
       {
         "image-alt": "off"
       }
-    ]
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=color-scheme]"
+        ]
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }
